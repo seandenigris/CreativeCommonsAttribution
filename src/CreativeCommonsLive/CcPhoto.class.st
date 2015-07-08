@@ -7,7 +7,7 @@ Class {
 		'owner',
 		'license'
 	],
-	#category : #CreativeCommonsLive
+	#category : #'CreativeCommonsLive-Core'
 }
 
 { #category : #private }

@@ -1,7 +1,7 @@
 Class {
 	#name : #CcLicenseSpecification,
 	#superclass : #BabyPhexample,
-	#category : #CreativeCommonsLive
+	#category : #'CreativeCommonsLive-Specification'
 }
 
 { #category : #tests }

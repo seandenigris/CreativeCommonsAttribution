@@ -6,7 +6,7 @@ Class {
 		'abbreviation',
 		'version'
 	],
-	#category : #CreativeCommonsLive
+	#category : #'CreativeCommonsLive-Core'
 }
 
 { #category : #'as yet unclassified' }

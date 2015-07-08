@@ -8,7 +8,7 @@ Class {
 		'license',
 		'profileUrl'
 	],
-	#category : #CreativeCommonsLive
+	#category : #'CreativeCommonsLive-Specification'
 }
 
 { #category : #asserting }
