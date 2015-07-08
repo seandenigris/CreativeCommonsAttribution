@@ -1,1 +1,2 @@
-# CreativeCommonsAttribution
+# CreativeCommonsLive
+CreativeCommonsLive models the CC world - licenses, Flickr photos, attributions...
