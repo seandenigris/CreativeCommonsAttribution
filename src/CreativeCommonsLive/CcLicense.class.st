@@ -24,6 +24,27 @@ CcLicense class >> attribution [
 		yourself
 ]
 
+{ #category : #examples }
+CcLicense class >> examplePrinting [
+	<gtExample>
+	^ self
+		given: [ self exampleVersion ]
+		when: [ :lic | lic printString ]
+		then: [ :str | str should equal: 'CC BY-NC-ND 3.0' ]
+]
+
+{ #category : #examples }
+CcLicense class >> exampleVersion [
+	<gtExample>
+	^ self
+		given: [ '3.0' ]
+		when: [ :version | 
+			self nonCommercialNoDerivs
+				version: version;
+				yourself ]
+		then: [ :lic :v | lic version should equal: v ]
+]
+
 { #category : #'as yet unclassified' }
 CcLicense class >> noDerivs [
 
@@ -79,6 +100,17 @@ CcLicense >> abbreviation: anObject [
 	abbreviation := anObject
 ]
 
+{ #category : #accessing }
+CcLicense >> atttributionStringFor: work [
+	^ String streamContents: [ :str |
+		str << $" << work title << $".
+		str << ' by '.
+		work authors
+			do: [ :a | str << a fullName ]
+			separatedBy: [ str space ].
+		str << ' is licensed under ' << self linkText ]
+]
+
 { #category : #'as yet unclassified' }
 CcLicense >> deedUrl [
 
@@ -107,6 +139,11 @@ CcLicense >> name [
 { #category : #accessing }
 CcLicense >> name: anObject [
 	name := anObject
+]
+
+{ #category : #accessing }
+CcLicense >> printOn: aStream [
+	aStream nextPutAll: self linkText
 ]
 
 { #category : #accessing }
