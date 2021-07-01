@@ -1,6 +1,6 @@
 Class {
 	#name : #CcPhotoSpecification,
-	#superclass : #BabyPhexample,
+	#superclass : #TestCase,
 	#instVars : [
 		'photoUrl',
 		'ownerUsername',

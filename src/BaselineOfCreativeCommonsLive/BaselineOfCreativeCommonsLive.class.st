@@ -9,7 +9,11 @@ BaselineOfCreativeCommonsLive >> baseline: spec [
   <baseline>
 
 	spec for: #'common' do: [
-		spec package: #CreativeCommonsLive ].
+		spec baseline: 'Mocketry' with: [
+			spec repository: 'github://dionisiydk/Mocketry' ].
+
+		spec package: #CreativeCommonsLive with: [
+			spec requires: #('Mocketry') ] ].
 ]
 
 { #category : #accessing }

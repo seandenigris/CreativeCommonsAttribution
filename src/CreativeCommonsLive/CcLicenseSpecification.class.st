@@ -1,6 +1,6 @@
 Class {
 	#name : #CcLicenseSpecification,
-	#superclass : #BabyPhexample,
+	#superclass : #TestCase,
 	#category : #'CreativeCommonsLive-Specification'
 }
 
